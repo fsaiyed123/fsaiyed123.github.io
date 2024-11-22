@@ -1,0 +1,225 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #e0e0e0;
+    background: #1c1c1c;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: linear-gradient(45deg, #2a2a72, #006994); /* Slightly toned down gradient */
+    color: #f0f0f0;
+    padding: 1rem 0;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the logo to set a max width and allow for responsiveness */
+.logo {
+    max-width: 200px;  /* Adjust based on the size of your logo */
+    height: auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* Navigation */
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 1.5rem;
+}
+
+header nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #009ffd;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(135deg, #001f3f, #003f5c);
+    color: #e0e0e0;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#hero .cta-button {
+    background: #009ffd;
+    color: #1c1c1c;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+#hero .cta-button:hover {
+    background: #2a2a72;
+    color: #e0e0e0;
+}
+
+/* About Section */
+#about {
+    padding: 2rem 0;
+    background: #232323;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2rem;
+    color: #009ffd;
+    margin-bottom: 1rem;
+}
+
+#about p {
+    color: #b0b0b0;
+}
+
+/* Services Section */
+#services {
+    padding: 2rem 0;
+    background: #1e1e2f; /* Slightly lighter dark tone for better contrast */
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2rem;
+    color: #00aaff; /* Brighter blue for improved visibility */
+    margin-bottom: 1.5rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.service {
+    background: #29293d; /* A lighter dark shade to distinguish from background */
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Slightly darker shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-5px); /* Add hover effect for interactivity */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Enhance hover shadow */
+}
+
+.service h3 {
+    color: #00aaff; /* Bright blue to make headings pop */
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.service p {
+    color: #dcdcdc; /* Lighter text color for better readability */
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+/* Contact Section */
+#contact {
+    padding: 2rem 0;
+    text-align: center;
+    background: #232323;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    color: #009ffd;
+    margin-bottom: 1rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 0.5rem 0 0.2rem;
+    text-align: left;
+    font-weight: 500;
+}
+
+form input, form textarea, form button {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #1c1c1c;
+    color: #e0e0e0;
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: #666;
+}
+
+form button {
+    background: #009ffd;
+    color: #1c1c1c;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #2a2a72;
+    color: #e0e0e0;
+}
+
+#response-message {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: #2a2a72;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 1rem 0;
+}
