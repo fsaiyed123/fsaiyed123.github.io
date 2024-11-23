@@ -125,15 +125,19 @@ header nav ul li a:hover {
     margin-bottom: 1.5rem;
 }
 
+.services-grid-container {
+    padding: 0 2rem; /* Space on the left and right */
+}
+
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
+    gap: 1.5rem; /* Space between the service boxes */
 }
 
 .service {
     background: #29293d; /* A lighter dark shade to distinguish from background */
-    padding: 1.5rem;
+    padding: 2rem; /* Add padding inside the boxes for spacing around content */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Slightly darker shadow for depth */
     transition: transform 0.3s, box-shadow 0.3s;

@@ -40,18 +40,20 @@
     <!-- Services Section -->
     <section id="services">
         <h2>Our Services</h2>
-        <div class="services-grid">
-            <div class="service">
-                <h3>Custom Websites</h3>
-                <p>We create fully custom designs that align with your brand.</p>
-            </div>
-            <div class="service">
-                <h3>Responsive Design</h3>
-                <p>Your website will look amazing on any device.</p>
-            </div>
-            <div class="service">
-                <h3>SEO Optimization</h3>
-                <p>Increase your visibility and rank higher on search engines.</p>
+        <div class="services-grid-container">
+            <div class="services-grid">
+                <div class="service">
+                    <h3>Custom Websites</h3>
+                    <p>We create fully custom designs that align with your brand.</p>
+                </div>
+                <div class="service">
+                    <h3>Responsive Design</h3>
+                    <p>Your website will look amazing on any device.</p>
+                </div>
+                <div class="service">
+                    <h3>SEO Optimization</h3>
+                    <p>Increase your visibility and rank higher on search engines.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -59,7 +61,18 @@
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>Have a question or need a website? Email us at <a href="mailto:fsaiyed123@gmail.com">fsaiyed123@gmail.com</a>.</p>
+        <form action="/send-email" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
     <!-- Footer -->
